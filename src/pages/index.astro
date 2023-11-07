@@ -1,7 +1,6 @@
 ---
 import Nav from "../components/Nav.astro";
 import Main from "../components/Main.astro";
-import Footer from "../components/Footer.astro";
 ---
 
 <!doctype html>
@@ -20,7 +19,6 @@ import Footer from "../components/Footer.astro";
       <img src="../../public/img/gulcirkel.png" alt="gul cirkel" class="gul2" />
       <img src="../../public/img/gulcirkel.png" alt="gul cirkel" class="gul3" />
       <Main />
-      <Footer />
     </main>
   </body>
 </html>
@@ -35,30 +33,62 @@ import Footer from "../components/Footer.astro";
     max-width: 100%;
     position: relative;
     overflow: hidden;
-    padding-bottom: 180px;
+    padding-bottom: 300px;
   }
   .gul1 {
     position: absolute;
-    width: 40%;
+    width: 120%;
     height: auto;
-    z-index: -1;
-    top: 120px;
-    left: -100px;
+    z-index: 1;
+    top: 0px;
+    left: -180px;
   }
   .gul2 {
     position: absolute;
-    width: 90%;
+    width: 180%;
     height: auto;
-    z-index: -1;
-    top: 400px;
-    left: 440px;
+    z-index: 1;
+    top: 1250px;
+    left: -30px;
   }
   .gul3 {
     position: absolute;
-    width: 70%;
+    width: 100%;
     height: auto;
-    z-index: -1;
-    top: 1600px;
-    left: 300px;
+    z-index: 1;
+    top: 3240px;
+    left: -60px;
+  }
+
+  @media (min-width: 800px) {
+    body {
+      background-color: #e6e6dd;
+      margin: 0;
+      padding: 0;
+    }
+    main {
+      max-width: 100%;
+      position: relative;
+      overflow: hidden;
+      padding-bottom: 180px;
+    }
+    .gul1 {
+      width: 40%;
+      z-index: -1;
+      top: 120px;
+      left: -100px;
+    }
+    .gul2 {
+      width: 90%;
+      z-index: -1;
+      top: 400px;
+      left: 440px;
+    }
+    .gul3 {
+      width: 70%;
+      z-index: -1;
+      top: 1600px;
+      left: 300px;
+    }
   }
 </style>

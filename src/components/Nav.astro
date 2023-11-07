@@ -1,8 +1,24 @@
 <header>
-  <a
-    href="https://www.ca.dk/?gad_source=1&gclid=CjwKCAjw7oeqBhBwEiwALyHLM39ljc9Ecui-h313RA1JcfKm75bOQ6nrq9hTRcVPypV8Xe5V46jW0RoC49oQAvD_BwE"
-    target="_blank"><img src="../../public/img/logo.svg" alt="hjemmeside" /></a
-  >
+  <div class="image-container">
+    <a
+      href="https://www.ca.dk/?gad_source=1&gclid=CjwKCAjw7oeqBhBwEiwALyHLM39ljc9Ecui-h313RA1JcfKm75bOQ6nrq9hTRcVPypV8Xe5V46jW0RoC49oQAvD_BwE"
+      target="_blank"
+      ><img
+        class="desktopimg"
+        src="../../public/img/logo.svg"
+        alt="desktopimg"
+      /></a
+    >
+    <a
+      href="https://www.ca.dk/?gad_source=1&gclid=CjwKCAjw7oeqBhBwEiwALyHLM39ljc9Ecui-h313RA1JcfKm75bOQ6nrq9hTRcVPypV8Xe5V46jW0RoC49oQAvD_BwE"
+      target="_blank"
+      ><img
+        class="mobileimg"
+        src="../../public/img/lillelogo.svg"
+        alt="mobileimg"
+      /></a
+    >
+  </div>
 </header>
 <nav>
   <ul>
@@ -10,22 +26,54 @@
       <a href="https://www.linkedin.com/company/caakasse" target="_blank"
         ><img src="../../public/img/linked.svg" alt="linkedin" /></a
       >
+      <!--LinkedIn icon by icons8-->
     </li>
     <li>
       <a href="https://www.facebook.com/caakasse" target="_blank"
         ><img src="../../public/img/face.svg" alt="facebook" /></a
       >
+      <!--Facebook icon by icons8-->
     </li>
     <li>
       <a href="https://www.instagram.com/caakasse/" target="_blank"
         ><img src="../../public/img/insta.svg" alt="instagram" /></a
       >
+      <!--Instagram icon by icons8-->
     </li>
   </ul>
 </nav>
 
 <style>
+  @media (max-width: 800px) {
+    header img {
+      background-image: url(../../public/img/lillelogo.svg);
+    }
+    .desktopimg {
+      display: none;
+    }
+    .mobileimg {
+      display: block;
+    }
+    ul {
+      display: flex;
+      list-style-type: none;
+      margin-top: -60px;
+      margin-right: -45px;
+      justify-content: space-between;
+    }
+    nav img {
+      width: 60%;
+      border-radius: 10px;
+      margin: 0;
+    }
+  }
   @media (min-width: 800px) {
+    .desktopimg {
+      display: block;
+    }
+    .mobileimg {
+      display: none;
+    }
     header img {
       max-width: 28%;
       padding: 20px;
