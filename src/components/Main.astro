@@ -1,14 +1,35 @@
 <section class="container">
-  <div class="content">
-    <h2>lorem ipsum</h2>
-    <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus
-      aliquam laborum sequi exercitationem deleniti ex illo eveniet modi
-      doloremque? Necessitatibus, ab nam. Harum veniam accusantium placeat
-      suscipit! Ullam, ad nemo.
-    </p>
-  </div><div class="image">
+  <div class="image">
     <img src="../../public/img/test.webp" alt="teste" />
+  </div>
+  <div class="content">
+    <h2></h2>
+    <p>
+      Det kan være svært at være ung, og samtidig få hverdagen til at hænge
+      sammen. Uanset om du ønsker sparring om din personprofil eller trivsel på
+      studiet, så står CA´s Karriererådgivning klar til at hjælpe dig.
+    </p>
+
+    <ul>
+      <li>Går du rundt med udfordringer i hverdagen?</li>
+      <li>Ønsker du et nyt job?</li>
+      <li>Har du brug for at blive guidet gennem din jobsøgningsproces?</li>
+      <li>Trives du ikke på dit arbejde?</li>
+      <li>Har du svært ved at få job og fritid til at hænge sammen?</li>
+      <li>Vil du lære dig selv bedre at kende?</li>
+    </ul>
+
+    <p>
+      Disse spørgsmål er blot eksempler på nogle udfordringer, som vores
+      rådgivere og coaches dagligt sparrer med unge om gennem vores
+      Karriererådgivning. Hvis du kan nikke genkendende ja til et eller flere,
+      så kontakt os for at booke en tid til en rådgiver eller coach, så guider
+      vi dig igennem resten.
+    </p>
+
+    <div class="btn">
+      <a href="www.facebook.dk" target="_blank">Klik her</a>
+    </div>
   </div>
 </section>
 
@@ -22,14 +43,29 @@
 </section>
 
 <section class="container">
-  <div class="content">
-    <h2>lorem ipsum</h2>
+  <div class="content3">
+    <h2></h2>
     <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus
-      aliquam laborum sequi exercitationem deleniti ex illo eveniet modi
-      doloremque? Necessitatibus, ab nam. Harum veniam accusantium placeat
-      suscipit! Ullam, ad nemo.
+      Vil du gerne lære dig selv bedre at kende, og finde ud af hvad der
+      motiverer dig? En detaljeret personprofilanalyse kan hjælpe på
+      jobsøgningen, så man lærer sine kvaliteter og sig selv bedre at kende.
     </p>
+    <p>
+      En jobansøgning der både skal være personlig, informerende og interessant
+      kan være svær at udforme alene. Vores karriererådgivere kan give dig
+      personlig feedback på både din jobansøgning og CV. Vi tilbyder også
+      skabeloner og online værktøjer, så du er godt forberedt til møder med
+      vores coaches og rådgivere.
+    </p>
+    <p>
+      Med CA´s Karriererådgivning kan vi hjælpe med at få dækket dine behov, så
+      du når et skridt videre i din karriere. Book et møde med en
+      karriererådgiver via nedenstående link - så guider vi dig gennem din
+      jobsøgning, og lægger en plan for din karriereudvikling.
+    </p>
+    <div class="btn">
+      <a href="www.facebook.dk" target="_blank">Klik her</a>
+    </div>
   </div><div class="image">
     <img src="../../public/img/test.webp" alt="teste" />
   </div>
@@ -40,27 +76,45 @@
   .container2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-left: 10cqw;
-    margin-right: 10cqw;
+    margin-left: 16cqw;
+    margin-right: 0;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
   }
   .container2 {
-    background-color: rgb(255, 255, 255);
+    margin-right: 16cqw;
+    margin-top: 8cqw;
+    margin-bottom: 8cqw;
   }
   .container {
-    background-color: aliceblue;
+    background-color: #e6f1f7;
+    margin-left: 12cqw;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+  }
+  .content,
+  .content3 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    align-content: center;
+    font-size: 16px;
+    line-height: 1.5;
   }
   .content {
-    margin: 20px;
-    align-content: center;
+    margin-right: 80px;
+  }
+  .content3 {
+    margin-left: 80px;
   }
   .image,
   .image2 {
     display: grid;
     place-items: center;
-    margin: 20px;
   }
   .image img {
     width: 50%;
+    margin-top: 80px;
+    margin-bottom: 80px;
   }
   .image2 img {
     width: 100%;
@@ -68,5 +122,20 @@
   img {
     width: 40%;
     height: auto;
+  }
+  .btn {
+    display: inline-block;
+    margin-top: 36px;
+    padding: 12px;
+    background-color: #054674;
+    text-align: center;
+    border-radius: 8px;
+  }
+  .btn a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .btn:hover {
+    transform: scale(1.04);
   }
 </style>
