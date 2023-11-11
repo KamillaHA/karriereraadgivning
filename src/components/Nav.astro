@@ -1,23 +1,41 @@
 <header>
   <div class="image-container">
-    <a
-      href="https://www.ca.dk/?gad_source=1&gclid=CjwKCAjw7oeqBhBwEiwALyHLM39ljc9Ecui-h313RA1JcfKm75bOQ6nrq9hTRcVPypV8Xe5V46jW0RoC49oQAvD_BwE"
-      target="_blank"
+    <a href="https://www.ca.dk/udvikling/karriereradgivere/" target="_blank"
       ><img
         class="desktopimg"
         src="../../public/img/logo.svg"
         alt="desktopimg"
       /></a
     >
-    <a
-      href="https://www.ca.dk/?gad_source=1&gclid=CjwKCAjw7oeqBhBwEiwALyHLM39ljc9Ecui-h313RA1JcfKm75bOQ6nrq9hTRcVPypV8Xe5V46jW0RoC49oQAvD_BwE"
-      target="_blank"
+    <a href="https://www.ca.dk/udvikling/karriereradgivere/" target="_blank"
       ><img
         class="mobileimg"
         src="../../public/img/lillelogo.svg"
         alt="mobileimg"
       /></a
     >
+  </div>
+  <div class="mobil_nav">
+    <ul>
+      <li class="li_in">
+        <a href="https://www.linkedin.com/company/caakasse" target="_blank"
+          ><img src="../../public/img/linked.svg" alt="linkedin" /></a
+        >
+        <!--LinkedIn icon by icons8-->
+      </li>
+      <li>
+        <a href="https://www.facebook.com/caakasse" target="_blank"
+          ><img src="../../public/img/face.svg" alt="facebook" /></a
+        >
+        <!--Facebook icon by icons8-->
+      </li>
+      <li>
+        <a href="https://www.instagram.com/caakasse/" target="_blank"
+          ><img src="../../public/img/insta.svg" alt="instagram" /></a
+        >
+        <!--Instagram icon by icons8-->
+      </li>
+    </ul>
   </div>
 </header>
 <nav>
@@ -48,18 +66,34 @@
     header img {
       background-image: url(../../public/img/lillelogo.svg);
     }
+    .mobil_nav {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding-left: 180px;
+      margin: 0;
+    }
+    nav {
+      display: none;
+    }
     .desktopimg {
       display: none;
     }
     .mobileimg {
       display: block;
     }
+    .li_in a img {
+      border-bottom-left-radius: 10px;
+    }
     ul {
       display: flex;
       list-style-type: none;
       margin-top: -60px;
-      margin-right: -45px;
-      justify-content: space-between;
+      padding: 0;
+    }
+    li a img {
+      width: 100%;
+      margin: 0;
     }
     nav img {
       width: 60%;
@@ -78,7 +112,11 @@
       max-width: 28%;
       padding: 20px;
     }
+    .mobil_nav {
+      display: none;
+    }
     nav {
+      display: block;
       height: 100%;
       width: 90px;
       position: fixed;
