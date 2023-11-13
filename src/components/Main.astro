@@ -39,16 +39,19 @@
 </section>
 
 <section class="container2">
-  <div class="image2">
-    <img src="../../public/img/test.webp" alt="teste" />
-  </div>
-  <div class="image2">
-    <img src="../../public/img/test.webp" alt="teste" />
-  </div>
-  <div class="btn2">
-    <a href="https://www.ca.dk/udvikling/karriereradgivere/" target="_blank"
-      >Planlæg en karrieresamtale</a
-    >
+  <div class="video">
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/JnEb7tAf75Q?si=LAVwB-0gg_LXvQjw"
+      title="YouTube video player"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+    <div class="btn2">
+      <a href="https://www.ca.dk/udvikling/karriereradgivere/" target="_blank"
+        >Planlæg en karrieresamtale</a
+      >
+    </div>
   </div>
 </section>
 
@@ -96,25 +99,39 @@
     padding-bottom: 30px;
   }
   .container2 {
-    margin: 10px;
     margin-top: 80px;
     margin-bottom: 80px;
+    position: relative;
   }
   .container {
     background-color: #e6f1f7;
   }
   .content,
   .content3 {
-    align-content: center;
     font-size: 16px;
     line-height: 1.5;
     margin: 35px;
   }
-  .image,
-  .image2 {
+  .image {
     display: grid;
     place-items: center;
     width: 100%;
+  }
+  .video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100%;
+    max-width: 356px;
+    height: 450px;
+  }
+  .video iframe {
+    width: 100%;
+    height: 100%;
   }
 
   .image img {
@@ -122,11 +139,6 @@
     margin: 60px;
     z-index: 2;
   }
-  .image2 img {
-    width: 100%;
-    z-index: 2;
-  }
-
   .btn,
   .btn2 {
     display: inline-block;
@@ -137,19 +149,19 @@
     border-radius: 8px;
   }
   .btn {
-    margin-left: 90px;
+    margin-left: 45px;
   }
   .btn2 {
-    margin-left: 120px;
+    margin-top: 60px;
   }
   .btn a,
   .btn2 a {
     color: #fff;
     text-decoration: none;
   }
+
   @media (min-width: 800px) {
-    .container,
-    .container2 {
+    .container {
       display: grid;
       grid-template-columns: 1fr 1fr;
       margin-left: 16cqw;
@@ -158,9 +170,11 @@
       border-bottom-left-radius: 80px;
     }
     .container2 {
-      margin-right: 16cqw;
-      margin-top: 8cqw;
-      margin-bottom: 8cqw;
+      width: 100%;
+      z-index: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     .container {
       background-color: #e6f1f7;
@@ -183,17 +197,19 @@
       margin-left: 80px;
     }
     .image,
-    .image2 {
-      display: grid;
-      place-items: center;
+    .video {
+      width: 100%;
+      max-width: 1000px;
+      height: 600px;
+    }
+    .video iframe {
+      width: 100%;
+      max-height: 100%;
     }
     .image img {
       width: 80%;
       margin-top: 80px;
       margin-bottom: 80px;
-    }
-    .image2 img {
-      width: 100%;
     }
     img {
       width: 40%;
@@ -207,11 +223,13 @@
       text-align: center;
       border-radius: 8px;
     }
-    .btn a {
+    .btn a,
+    .btn2 a {
       color: #fff;
       text-decoration: none;
     }
-    .btn:hover {
+    .btn:hover,
+    .btn2:hover {
       transform: scale(1.04);
     }
   }
